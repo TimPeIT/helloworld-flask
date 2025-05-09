@@ -22,6 +22,13 @@ def hello():
 def kurs():
     return "<p>Hallo Kurs 25-01</p>"
 
+@app.route('/about')
+def about():
+    return "Dies wurde von Tim erstellt!"
+
+@app.route('/info')
+def info():
+    return "Das ist eine Info-Seite über erstellen einer Web-App"
 
 if __name__ == "__main__":
     app.run(debug=True)
